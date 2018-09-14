@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:clickable="true"
+        android:fadeScrollbars="false"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/status" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="14dp"
+        android:text="My Status"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:text="Random text" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="88dp"
+        android:textAlignment="viewStart"
+        android:gravity="start"
+
+        android:text="Recent Stories" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-166dp"
+        android:layout_marginTop="126dp" />
+
+
+</android.widget.RelativeLayout>
